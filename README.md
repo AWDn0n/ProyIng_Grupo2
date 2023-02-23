@@ -1,4 +1,7 @@
 # Proyecto de Ingeniería - Grupo2
+
+[ENLACE COMPETICIÓN](https://nuwe.io/dev/competitions/reto-ensena-oracle-espana)
+
 En 2024, NUWE unirá tecnología y restauración lanzando en España la cadena de restaurantes del futuro: “NUWE EVA”. En “NUWE EVA" podrás elegir de entre un gran abanico de deliciosos platos que a simple vista parecerán la típica comida fast food, pero que estarán elaborados con los mejores ingredientes para que puedas disfrutar del mejor sabor y de la mejor calidad. Estarás comiendo en el restaurante healthy del momento. Y eso no es todo. Nuestro robot y talentoso camarero, “EVA”, os atenderá con gusto para ofreceros la mejor experiencia. (Caso ficticio)
 
 Objetivo:
