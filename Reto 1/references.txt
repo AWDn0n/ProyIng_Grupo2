@@ -1,0 +1,16 @@
+CNN
+https://www.geeksforgeeks.org/introduction-convolution-neural-network/
+https://stanford.edu/~shervine/teaching/
+https://builtin.com/data-science/recurrent-neural-networks-and-lstm
+
+NLP
+https://builtin.com/data-science/introduction-nlp 
+
+TRANSFER LEARNING
+https://builtin.com/data-science/transfer-learning
+Retrain image classifiers Tensorflow: https://www.tensorflow.org/hub/tutorials/tf2_image_retraining 
+Microsoft pre-trained models: https://learn.microsoft.com/en-us/sql/machine-learning/python/ref-py-microsoftml?view=sql-server-ver16
+Keras pre-trained models: https://keras.io/api/applications/ 
+
+TUTORIALS 
+CNN image classification: https://www.youtube.com/watch?v=jztwpsIzEGc&ab_channel=NicholasRenotte
