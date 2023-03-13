@@ -10,7 +10,9 @@ Crea una clasificación de alimentos que estén o estarán presentes en nuestra 
 ## 💯 Evaluación:
 La evaluación y puntuación de este primer reto se evaluará con el criterio de F1-score macro.
 
-La limitación que existe en este reto son las tecnicas de Transfer Learning, se tiene que programar la red neuronal y entrenar de forma manual. Además, de que el uso de datos externos también se verá penalizado incluso desqualifiado para la competición.
+Está permitido tanto el entrenamiento manual del modelo como el transfer learning. El uso de datos externos puede ser penalizado.
+
+✅ Formato de entrega
 
 ## ✅ Formato de entrega
 Para el archivo que tiene que enviar le presentamos una plantilla de ejemplo de cómo tiene que ser el JSON:
