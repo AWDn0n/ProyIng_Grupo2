@@ -14,3 +14,4 @@ Keras pre-trained models: https://keras.io/api/applications/
 
 TUTORIALS 
 CNN image classification: https://www.youtube.com/watch?v=jztwpsIzEGc&ab_channel=NicholasRenotte
+Food Image Classification (Transfer Learning Keras): https://www.youtube.com/watch?v=35iRdqY01co&ab_channel=GabrielAtkin
