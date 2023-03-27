@@ -1,3 +1,6 @@
+# Reto 1 - Models
+## Final model in: 3.1_2-ViT-Base
+
 **Note**: Models are separated into different files to be able to push to github. 
 To join the files, go into it's **respective folder** and use the following command:
 ```bash
