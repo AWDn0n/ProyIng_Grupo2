@@ -1,12 +1,14 @@
 import streamlit as st
 import tensorflow as tf
+from transformers import ViTFeatureExtractor, TFViTForImageClassification
 from PIL import Image
 import numpy as np
 from transformers import ViTImageProcessor, ViTForImageClassification
 import torch
 
 # Load the pre-trained model
-model = tf.keras.applications.MobileNetV2()
+model = TFViTForImageClassification.from_pretrained('google/vit-base-patch16-224')
+feature_extractor = ViTFeatureExtractor.from_pretrained('google/vit-base-patch16-224')
 
 # Set Streamlit app title and description
 st.title("Food Image Classifier")
@@ -119,8 +121,7 @@ if uploaded_image is not None:
 st.markdown(
     f"""
     <footer style='text-align: center; margin-top: 50px; color: {text_color};'>
-        Made with ❤️ by Your Name<br>
-        Images from Unsplash.com
+        Made with ❤️ by Script Kiddies<br>
     </footer>
     """,
     unsafe_allow_html=True
