@@ -2,6 +2,8 @@ import streamlit as st
 import tensorflow as tf
 from PIL import Image
 import numpy as np
+from transformers import ViTImageProcessor, ViTForImageClassification
+import torch
 
 # Load the pre-trained model
 model = tf.keras.applications.MobileNetV2()
@@ -70,21 +72,29 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+
+
+# Load the ViT model and image processor
+processor = ViTImageProcessor.from_pretrained('google/vit-base-patch16-224')
+model = ViTForImageClassification.from_pretrained('google/vit-base-patch16-224')
+
 # Function to preprocess the image
 def preprocess_image(image):
     image = image.resize((224, 224))
     image = np.array(image)
-    image = tf.keras.applications.mobilenet_v2.preprocess_input(image)
-    image = np.expand_dims(image, axis=0)
-    return image
+    inputs = processor(images=image, return_tensors="pt")
+    return inputs
 
 # Function to make predictions
 def predict_image(image):
-    image = preprocess_image(image)
-    prediction = model.predict(image)
-    label = tf.keras.applications.mobilenet_v2.decode_predictions(prediction, top=1)[0][0][1]
-    confidence = prediction[0][np.argmax(prediction)]
+    inputs = preprocess_image(image)
+    outputs = model(**inputs)
+    logits = outputs.logits
+    predicted_class_idx = logits.argmax(-1).item()
+    label = model.config.id2label[predicted_class_idx]
+    confidence = torch.softmax(logits, dim=-1)[0, predicted_class_idx].item()
     return label, confidence
+
 
 # Display image upload option
 uploaded_image = st.file_uploader("Upload an image", type=["jpg", "jpeg", "png"], key="fileUploader")
