@@ -74,6 +74,8 @@ st.markdown(
     unsafe_allow_html=True
 )
 
+
+
 # Load the ViT model and image processor
 processor = ViTImageProcessor.from_pretrained('google/vit-base-patch16-224')
 model = ViTForImageClassification.from_pretrained('google/vit-base-patch16-224')
