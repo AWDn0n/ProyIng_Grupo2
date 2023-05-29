@@ -1,0 +1,2 @@
+## NOTE FOR THE SCRIPTS
+These scripts were originally in the **parent directory**, but they were moved here to make the repository more organized. This means some of the scripts **may not work as intended**, as they were written with the assumption that they would be in the parent directory. If you want to use them, you will have to **change the paths** to the files they use.
